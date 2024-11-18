@@ -1,0 +1,17 @@
+.about-container {
+    display: flex; /* Usa o flexbox para alinhar os elementos */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    gap: 20px; /* Espaçamento entre imagem e texto */
+}
+
+.about-image {
+    width: 300px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Borda arredondada, opcional */
+}
+
+.about-text {
+    max-width: 600px; /* Define um limite máximo de largura para o texto */
+    font-size: 16px; /* Ajuste de tamanho de fonte */
+}
+

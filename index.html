@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryd - Manutenção de Informática</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background: #34495e;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .services, .about, .contact {
+            margin-bottom: 30px;
+        }
+
+        .services h2, .about h2, .contact h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .services ul {
+            list-style: none;
+        }
+
+        .services ul li {
+            margin-bottom: 10px;
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact form input, .contact form textarea, .contact form button {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        .contact form button {
+            background: #2c3e50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background: #34495e;
+        }
+
+        footer {
+            text-align: center;
+            background: #2c3e50;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .social-link img{
+    height: 24px;
+
+        }
+
+.social-link li {
+    display: inline;
+    margin-right: 8px;
+    }
+
+.social-link li a {
+    text-decoration: none;
+} 
+
+.about-container {
+    display: flex; /* Usa o flexbox para alinhar os elementos */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    gap: 20px; /* Espaçamento entre imagem e texto */
+}
+
+.about-image {
+    width: 300px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Borda arredondada, opcional */
+}
+
+.about-text {
+    max-width: 600px; /* Define um limite máximo de largura para o texto */
+    font-size: 16px; /* Ajuste de tamanho de fonte */
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <h1>Ryd Informatica</h1>
+        <p>Soluções em manutenção de informática</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <section id="services" class="services">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>Formatação e instalação de sistemas operacionais</li>
+            <li>Remoção de vírus e otimização de desempenho</li>
+            <li>Montagem e manutenção de PCs e notebooks</li>
+            <li>Suporte técnico remoto</li>
+            <li>Upgrade de hardware</li>
+        </ul>
+    </section>
+    <section id="about" class="about">
+        <h2>Sobre Nós</h2>
+        <div class="about-container">
+            <img src="./imagens/tec.jpg" alt="Equipe da TechFix trabalhando" class="about-image">        
+            <div class="about-text">
+        <p>
+            Na Ryd Informatica, somos especialistas em manutenção de computadores e notebooks. 
+            Nossa missão é oferecer serviços rápidos, confiáveis e de alta qualidade, 
+            ajudando nossos clientes a manterem seus dispositivos funcionando no melhor desempenho possível.
+        </p>
+        <p>
+            Estamos há mais de 10 anos no mercado, atendendo empresas e usuários finais 
+            com suporte técnico personalizado e soluções sob medida.
+        </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <input type="tel" name="phone" placeholder="Seu telefone (opcional)">
+            <textarea name="message" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div>
+            <h3>Nossas redes</h3>
+            <ul class="social-link">
+                <li>
+                    <a href="#" title="Siga-nos Instagram">
+                        <img src="./imagens/instagram.png" alt="Logo do Instagram" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Siga-nos Facebook">
+                        <img src="./imagens/facebook.png" alt="Logo do Facebook" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ryd Informatica - Ele sempre amou o Angelo</p>
+    </footer>
+</body>
+</html>
+
